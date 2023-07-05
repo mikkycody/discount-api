@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\Product\Category\CategoryEnum;
 use App\Traits\Filter\AddPipelineToModelTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -14,7 +15,7 @@ class Product extends Model
 
     public function discount_price()
     {
-        if ($this->category === 'boots' || ($this->sku === '000003' && $this->category === 'boots')) {
+        if ($this->category === CategoryEnum::BOOTS() || ($this->sku === '000003' && $this->category === CategoryEnum::BOOTS())) {
             return $this->price - ($this->price * 0.3); // 30% discount
         }
 
