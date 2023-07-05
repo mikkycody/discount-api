@@ -7,8 +7,6 @@ A simple product discount api implementation
 -   [Technologies](#technologies)
 -   [Getting Started](#getting-started)
     -   [Installation](#installation)
-    -   [Deployment](#deployment)
-    -   [Usage](#usage)
 ## Technologies
 
 -   [Laravel](https://laravel.com/) - PHP web framework
